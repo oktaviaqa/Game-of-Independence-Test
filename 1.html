@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bulma -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="2.css">
+    <link rel="stylesheet" href="3.css">
+    <link rel="stylesheet" href="result.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <title>Kemerdekaan</title>
+</head>
+<body>
+
+    <div id="homePage" class="">
+        <div id="homeCard" class="homeCard">
+            <h1 id="welcome" class="">Selamat datang</h1>
+            <div id="alignInput">
+                <label for="">Masukkan nama:</label>
+                <form action="" id="formHome">
+                    <input type="text" class="input is-small" id="inputName" autocomplete="off" required>
+            </div>
+                
+                <div id="tac">
+                    <input type="checkbox" id="checkboxHome">
+                    <label for="checkboxHome">I agree to the <a href="https://www.youtube.com/watch?v=mx86-rTclzA" target="_blank">terms and conditions</a></label>
+                </div>
+                <!-- <p style="color: rgb(255, 0, 0); font-size: small; text-align: center;">nama tidak valid!</p> -->
+                <button id="homeBtn" class="button is-small">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container displaynone" id="avatarPage">
+
+        <p class="nama" id="yourNameAvatar">NamaKamu</p>
+        <p class="titles">PILIH PAHLAWAN MU!</p>
+
+
+        <div class="allcard">
+
+            <div class="card" id="card1">
+                <img src="antasari.png" alt="">
+                <p>Pangeran Antasari</p>
+            </div>
+            <div class="card" id="card2">
+                <img src="https://i.ibb.co/jMz8bzP/ukuran125sisingaraja-removebg-preview.png" alt="">
+                <p>Sisingamangaraja</p>
+            </div>
+            <div class="card" id="card3">
+                <img src="https://i.ibb.co/d2PhYxz/ukuran125-Hasanudin.png" alt="">
+                <p>Pangeran Diponegoro</p>
+            </div>
+            <div class="card" id="card4">
+                <img src="https://i.ibb.co/6HdKsZf/ukuran125-Kartini-removebg-preview-removebg-preview.png" alt="">
+                <p>Raden Ajeng Kartini</p>
+            </div>
+            <div class="card" id="card5">
+                <img src="https://i.ibb.co/TP3C7YD/ukuran125-TU-removebg-preview.png" alt="">
+                <p>Teuku Umar</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="quizPage" class="displaynone">
+        <p class="nama" id="yourNameQuiz">NamaKamu</p>
+        <div id="questionCard">
+            <h1 id="questionText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, accusamus.</h1>
+            <div id="choiceContainer">
+                <button class="option" id="answer1">jawab 1</button>
+                <button class="option" id="answer2">jawab 2</button>
+                <button class="option" id="answer3">jawab 3</button>
+            </div>
+        </div>
+    </div>
+    <div id="resultPage" class="displaynone">
+        <div id="resultCard">
+            <div id="headerCard">
+                <div id="image"><img id="imgResult" src="ukuran125TU.jpg" alt=""></div>
+             <div class="nama" id="yourNameResult">NAMA</div>   
+            </div>
+            <div id="bodyCard">
+                <div id="congrats">
+                    <h1>Selamat Kamu Telah Menyelesaikan Quiz</h1>
+                    <h2>Kamu adalah seorang</h2>
+                </div>
+                <div id="category">
+                    <h1 id="categoryText">'Patriotisme'</h1>
+                </div>
+                <div id="descriptionCategory">
+                    <h1 id="descriptionText">Kamu adalah orang yang sangat peduli terhadap negaramu... KAMU HARUS BANGGA KARENA ITU</h1>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+</body>
+<script src="question.js"></script>
+<script src="result.js"></script>
+<script src="app.js"></script>
+<script src="3.js"></script>
+</html>

@@ -1,0 +1,123 @@
+body {
+    background-image: url('https://i.imgur.com/acyJQWZ.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.displaynone {
+    display: none !important;
+}
+
+#homepage {
+    height: 100%;
+    /* background-image: url('bg.png'); */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.homeCard {
+    color: rgb(0, 0, 0);
+    width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.8);
+    /* opacity: 0.5; */
+    background-color: #fde2c546;
+    box-shadow: 3px 3px 10px;
+    box-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #ca1e0b, 0 0 7px #ca1e0b,
+    0 0 10px #ca1e0b, 0 0 20px #ca1e0b;
+    padding: 20px;
+    border: 0px white solid;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.homeCard.active {
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+}
+
+#welcome {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#alignInput {
+    /* transform: translate(10%, 0%); */
+    margin: 0 auto;
+    width: 80%;
+}
+
+#inputName {
+    display: block;
+    width: 100%;
+    margin: 8px auto;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.393);
+    height: 23px;
+}
+.inputRedBorder {
+    border: 1px solid red !important;
+    outline-color: none;
+}
+.invalidInput {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}
+
+#tac {
+    text-align: center;
+}
+
+#homeBtn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px 19px;
+    box-sizing: border-box;
+    border: 2.5px solid rgba(0, 0, 0, 0.492);
+    background-color: #ff0000;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 32px;
+    line-height: 20px;
+    list-style: none;
+    outline: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: 0.3s;
+    
+}
+
+#tac a {
+    text-decoration: none;
+}
+
+
+
+
+
+#homeBtn:hover,
+#homeBtn:focus {
+    background-color: #f84b4b;
+}

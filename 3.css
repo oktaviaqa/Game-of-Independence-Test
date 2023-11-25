@@ -1,0 +1,112 @@
+body {
+    background-image: url('https://i.imgur.com/acyJQWZ.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'ADLaM Display', cursive;
+}
+
+#quizPage {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#quizTitle {
+    width: 100%;
+    height: 10%;
+    border: 1px solid black;
+}
+
+#questionCard {
+    height: 60%;
+    width: 60%;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.096);
+    box-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #ca1e0b, 0 0 7px #ca1e0b,
+    0 0 10px #ca1e0b, 0 0 20px #ca1e0b;
+}
+
+#questionText {
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(211, 211, 211);
+}
+
+#choiceContainer {
+    /* border: 1px solid black; */
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+.option {
+    font-size: large;
+    font-family: 'ADLaM Display', cursive;
+    width: 80%;
+    height: 67px;
+    margin: 4px auto;
+    display: block;
+    border: 0px solid black;
+    border-radius: 6px;
+    transform: scale(0.97);
+    transition: 0.2s ease;
+    background: rgb(206,34,34);
+    background: linear-gradient(135deg, rgba(206,34,34,1) 0%, rgba(206,168,168,1) 100%);
+}
+
+.option:hover {
+
+    transform: scale(1);
+    background: rgb(206,34,34);
+background: linear-gradient(135deg, rgba(206,34,34,1) 0%, rgba(238,194,194,1) 29%);
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+#quizPage {
+    font-family: 'ADLaM Display', cursive;
+    animation: fadeOut 0.5S;
+}
+#quizPage.active {
+    animation: fadeIn 0.5s;
+}
+#resultPage {
+    font-family: 'ADLaM Display', cursive;
+    animation: fadeOut 0.5s; 
+}
+#resultPage.active {
+    animation: fadeIn 0.5s;
+}
